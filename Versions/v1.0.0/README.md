@@ -6,7 +6,7 @@ Based on NeutralinoJS; **only tested on x86-64 Windows**
 Originally made by @ReTTr0c for OpenApollo V1
 
 -------------------------------------------------------------------------------------
-Dependencies:
+**Dependencies:**
 
 Python
 
