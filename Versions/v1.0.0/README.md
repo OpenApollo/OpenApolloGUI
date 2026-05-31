@@ -1,13 +1,17 @@
 
 OpenApollo telemetry GUI v1.0.0
+
 Based on NeutralinoJS; **only tested on x86-64 Windows**
 
 Originally made by @ReTTr0c for OpenApollo V1
 
 -------------------------------------------------------------------------------------
 Dependencies:
+
 Python
+
 PySerial (and serial?)
+
 Websockets
 
 Node.Js
