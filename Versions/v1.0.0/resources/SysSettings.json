@@ -1,0 +1,6 @@
+{
+    "MapApiKey": "abc",
+    "InputComPort": "COM5",
+    "InputBaudRate": "9600",
+    "RefreshFrequency": "2"
+}

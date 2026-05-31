@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+      <link rel="stylesheet" href="/styles.css">
+  <head>
+    <meta charset="UTF-8">
+
+    
+<div id="title-container">
+  <h1 id="OpenApollo">OpenApollo - NeutralinoJS GUI</h1>
+  <span id="HeaderStyle">GitHub: OpenApollo</span>   
+</div>
+  <font-size:6px> Open Source Project - Under MIT license</font-size:6px>
+            <hr style="height: 1px;">  
+        <div id="info"></div>
+            <hr style="height: 2px;">        
+
+
+<!--frame for map-->
+<div id="top-row-container">
+<div style="
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  width: 420px;
+  height: 550px;
+"
+>
+
+  
+<img id="map" alt="2D map", style="display:block; margin-top:10px;">
+<!--RapidAPI Static map fetch starts here-->
+  <button id="errTest"> Test Endpoint</button><br>
+  <button id="fetchBtn"> Get map!</button>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="FetchMapApi.js"></script>
+<!--RapidAPI Static map fetch ends here-->
+
+<div class="slidecontainer">
+      <p id="ZoomDisplay"> 10 </p>
+    <input id="setZoom" type="range" min="1" max="20" step="1"  value="10">
+    <output id="ZoomVal"></output>
+</div>
+<div id="latitude"> lat: </div>
+<div id="longitude"> lon: </div>
+</div>
+
+<!--Frame for Shunt values-->
+<div style="
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  width: 350px;
+  height: 370px;
+"
+>
+<p id="UTC"></p>
+<p id="LAT"></p>
+<p id="LON"></p>
+<p id="KM"></p>
+<p id="M"></p>
+<p id="MA"></p>
+<p id="HEAD"></p>
+<p id="X"></p>
+<p id="Y"></p>
+<p id="Z"></p>
+<p id="I"> </p>
+<p id="J"> </p>
+<p id="K"> </p>
+<p id="W"> </p>
+<p id="TEMP"> </p>
+
+</div>
+<div style="
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  width: 450px;
+  height: 370px;
+"
+>
+<p id="PRESS"></p>
+<p id="ALT"></p>
+<p id="temp"></p>
+<p id="pressure"></p>
+<p id="altitude"></p>
+<p id="accelX"></p>
+<p id="accelY"></p>
+<p id="accelZ"></p>
+
+
+</div>
+</div>
+  <body>
+
+
+        <button onclick="document.location='config.html'">Configure</button>
+        <button id="startSampling">Start Sampling</button>
+        <script type="module" src="StartSampling.js"></script> 
+        <button id="ARMSERVO">ARM+S</button>
+        <script type="module" src="StartSampling.js"></script>
+        <button id="ARMNOSERVO">ARM+NS</button>
+        <script type="module" src="StartSampling.js"></script>
+        <button id="DISARM">DISARM</button>   
+        <script type="module" src="StartSampling.js"></script>
+        <button id="LAUNCH">LAUNCH</button>
+        <script type="module" src="StartSampling.js"></script>
+
+
+      </div>
+    </div>
+
+
+    <script src="/js/neutralino.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

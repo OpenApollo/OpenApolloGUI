@@ -1,0 +1,82 @@
+* {
+  margin: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(219, 221, 223);
+     
+}
+
+#neutralinoapp {
+    text-align: left;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#OpenApollo {
+    color: lightseagreen;
+    text-align: left;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+}
+
+#HeaderStyle {
+    color: rgb(85, 85, 85);
+    text-align: right;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+#title-container {
+  display: flex;
+  align-items: space-between;   /* keeps text aligned nicely */
+  align-items: baseline;               /* space between items */
+  gap: 10px;
+}
+
+#top-row-container {
+  display: flex;
+  align-items: space-between;
+  align-items: baselne;
+  gap: 0px;
+}
+
+
+#neutralinoapp h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#neutralinoapp > div {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: lightseagreen; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
